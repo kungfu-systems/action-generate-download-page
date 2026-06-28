@@ -6,8 +6,8 @@ const main = async function () {
   const context = github.context;
   const argv = {
     apiKey: core.getInput("apiKey"),
-    bucketRelease: core.getInput("kungfu-releases"),
-    bucketPrebuilt: core.getInput("kungfu-prebuilt"),
+    bucketRelease: core.getInput("bucket-release"),
+    bucketPrebuilt: core.getInput("bucket-prebuilt"),
     baseId: core.getInput("airtable-baseid"),
     owner: context.payload.repository.owner.login,
     repo: context.payload.repository.name,
